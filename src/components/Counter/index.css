@@ -1,0 +1,63 @@
+.Counter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 25px;
+  position: relative;
+}
+
+.dec,
+.inc {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+  -webkit-user-drag: none;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.dec:hover,
+.inc:hover {
+  transform: scale(1.1);
+}
+
+.reset {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-45%);
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.reset:hover {
+  background-color: rgb(173, 173, 173);
+}
+
+.reset:active {
+  transform: translateX(-46%) scale(0.9);
+}
+
+@media screen and (max-width: 770px) {
+  .Counter {
+    width: 80%;
+    justify-content: space-between;
+  }
+}
