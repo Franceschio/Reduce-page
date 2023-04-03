@@ -33,7 +33,7 @@
 
 .reset {
   position: absolute;
-  bottom: 5px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-45%);
   background-color: grey;
